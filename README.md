@@ -40,5 +40,14 @@ az ad sp create-for-rbac \
         --sdk-auth
 ```
 
+### Apply to Custom Contributor Role
+
+```bash
+az ad sp create-for-rbac --name "GitHub-Actions-SP" --role "infra_deploy" --scopes /subscriptions/c48358f1-a13c-45eb-950e-be826e18b3b8 \
+--sdk-auth
+
+```
+
+
 ### Configure a federated identity credential on an app
 ### goto microsoft tutorial
